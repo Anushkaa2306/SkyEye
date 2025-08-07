@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Mozilla+Headline:wght@200..700&family=Oswald:wght@200..700&family=Tektur:wght@400..900&display=swap');
+
+
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background: rgba(191, 198, 222, 0.957);
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 170px;
+    /* background-color: seashell; */
+    border-radius: 160px;
+}
+.navbar h1 {
+    font-size: 4.5rem;
+    color: #152f46;
+     font-family: "Tektur", sans-serif;
+    margin-left: 70px;
+    text-shadow: 0px 0px 10px rgba(191, 198, 222, 0.957);
+
+}
+.navbar ul {
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2rem;
+}
+.Signin-button { 
+    background-color: #dd3d16;
+    color: rgb(232, 222, 222);    margin-right: 50px;
+    font-weight: 200;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
