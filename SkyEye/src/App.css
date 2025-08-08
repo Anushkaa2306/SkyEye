@@ -5,7 +5,9 @@ body {
 background: url('/image/background.png') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
+   animation: fade-in-top-normal 1s ease 0s 1 normal none;
 }
+ @keyframes fade-in-top-normal {0% { transform: translateY(-50px); opacity: 0; } 100% { transform: translateY(0); opacity: 1;} }
 
 .app-container {
   display: flex;
@@ -16,10 +18,18 @@ background: url('/image/background.png') no-repeat center center fixed;
   width: 240px;
   background: rgba(3, 12, 43, 0.957);
   padding: 20px;
+  background-image: url('/image/background.png');
+ background-color: rgb(33, 29, 29);
+ opacity: 0.9;
+position: absolute;
+background-clip: padding-box;
+filter: blur(px) saturate(150%) contrast(90%);
 
-  box-shadow: 2px 0 4px rgba(0,0,0,0.2);
+  box-shadow: 14px 10 4px rgba(3,4,0,0.2);
 }
-
+li{
+  display: flex;
+}
 .sidebar h2 {
   font-size: 2.3rem;
   margin-bottom: 20px;
@@ -37,6 +47,7 @@ background: url('/image/background.png') no-repeat center center fixed;
   cursor: pointer;
     color: #ffffff;
    font-family: "Tektur", sans-serif;
+   padding: 10px 5px;
 }
 .sidebar ul li a {
   margin: 15px 0;
@@ -45,8 +56,9 @@ background: url('/image/background.png') no-repeat center center fixed;
    font-family: "Tektur", sans-serif;
 }
 .sidebar ul li:hover{
-  background: rgba(180, 196, 255, 0.957);
+  background: rgba(180, 196, 255, 0.566);
       color: #000000;
+      border-radius: 20px;
 }
 .sidebar ul li a:hover{
   color: #000000;
@@ -56,6 +68,7 @@ background: url('/image/background.png') no-repeat center center fixed;
   flex: 1;
   padding: 20px;
   overflow-y: auto;
+  margin-left: 35vh;
 }
 
 .map-container {
@@ -64,7 +77,11 @@ background: url('/image/background.png') no-repeat center center fixed;
   margin-bottom: 20px;
   border-radius: 8px;
   position: relative;
+ animation: scale-up-bottom-normal 1s ease 0s 1 normal none; 
+  
 }
+@keyframes scale-up-bottom-normal {0% { transform: scale(0.5); transform-origin: 50% 100%; } 100% { transform: scale(1); transform-origin: 50% 100%;} }
+
 
 .map-pins {
   display: flex;
@@ -82,11 +99,13 @@ background: url('/image/background.png') no-repeat center center fixed;
   gap: 20px;
   flex-wrap: wrap;
 }
-
+ @keyframes scale-up-bl-normal {0% { transform: scale(0.5); transform-origin: 0% 100%; } 100% { transform: scale(1); transform-origin: 0% 100%;} }
 .alerts, .locations, .comparison {
   background: #08162db4;
   padding: 20px;
   border-radius: 8px;
+     animation: scale-up-bl-normal 1s ease 0s 1 normal none; 
+
   font-size: 1.2rem;
 
   flex: 1 1 300px;

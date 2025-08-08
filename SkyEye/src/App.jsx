@@ -3,6 +3,13 @@ import "./App.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import Nav from "./assets/component/nav.jsx";
+import {  BadgeAlert } from "./assets/component/BadgeAlert.js"; 
+
+
+import {  BadgeCheck } from "./assets/component/BadgeCheck.js"; 
+import { AppWindowMac } from "./assets/component/AppWindowMac.js";
+import { Bolt } from "./assets/component/Bolt.js";
+// import {  BadgeAlert } from "./assets/component/ BadgeAlert.js"; 
 
 const App = () => {
   const position = [22.5726, 88.3639]; // Example: Kolkata
@@ -14,16 +21,16 @@ const App = () => {
       <aside className="sidebar">
         <nav>
           <ul>
-            <li><a href="#dashboard">Dashboard</a></li>
-            <li><a href="#status">Status</a></li>
-            <li><a href="#alerts">Alerts</a></li>
-            <li><a href="#settings">Settings</a></li>
+         <li><a href="#dashboard">Dashboard</a> < AppWindowMac/> </li>
+            <li><a href="#status">Status</a><BadgeCheck/></li>
+            <li><a href="#alerts">Alerts</a><BadgeAlert/></li> 
+            <li><a href="#settings">Settings</a><Bolt/></li>
           </ul>
         </nav>
       </aside>
-
+ 
       <main className="main">
-        <div className="map-container">
+        <div className="map-container ">
           <h2>Unauthorized Construction Map</h2>
 
           {/* ✅ MAP GOES HERE */}

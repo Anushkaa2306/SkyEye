@@ -10,7 +10,7 @@
     align-items: center;
     height: 150px;
     width: 100%;
-    background: rgba(191, 198, 222, 0.957);
+    background: rgba(232, 233, 237, 0.464);
    
 }
 .logo{
@@ -42,10 +42,13 @@
     display: flex;
     font-size: 1.2rem;
 }
+@keyframes fade-in-top-normal {0% { transform: translateY(-50px); opacity: 0; } 100% { transform: translateY(0); opacity: 1;} }
+
 .Signin-button { 
     background-color: #dd3d16;
     color: rgb(232, 222, 222);    margin-right: 50px;
     font-weight: 200;
+     animation: fade-in-top-normal 1s ease 0s 1 normal none; 
     border-radius: 5px;
     display: flex;
     align-items: center;
